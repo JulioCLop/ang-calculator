@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Calculator';
+  title = "Calculator App";
+
+   num1: number;
+  num2: number;
+  result: number;
+
+  add(){
+    this.result = this.num1 + this.num2;
+  }
+  subtract(){
+     this.result = this.num1 - this.num2;
+  }
+  multiply(){
+    this.result = this.num1 * this.num2;
+  }
+
+  divide(){
+    this.result = this.num1 % this.num2;
+  }
 }
